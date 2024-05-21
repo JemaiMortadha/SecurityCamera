@@ -1,29 +1,58 @@
-Thanks for Downloading this project
-Support me by following me on GitHub : https://github.com/JemaiMortadha
+# Security Camera
 
+Thanks for downloading this project! Support me by following me on GitHub: [JemaiMortadha](https://github.com/JemaiMortadha)
 
+## Requirements
 
----> Python3 
-Please follow the commands to install the needed modules:
+- Python 3.x
+- Required Python libraries:
+  - `requests`
+  - `PIL` (Pillow)
+  - `cv2` (OpenCV)
 
-*********************************************************
+## Installation
 
-Linux Terminal :
+Follow the commands below to install the necessary modules.
+
+### Linux
+
+```sh
 sudo pip3 install requests
-sudo pip3 install PIL
-sudo pip3 install cv2
+sudo pip3 install pillow
+sudo pip3 install opencv-python
+```
 
+### Windows
 
-
-
-
-Windows CMD :
+```sh
 pip install requests
-pip install PIL
-pip install cv2
+pip install pillow
+pip install opencv-python
+```
 
-*********************************************************
-You have to create a telegram bot , ( Just contact @BotFather on Telegram, contact it to make a new bot if you don't have one , then , ask it for your bots token "XXXXXXXXX:YYYYYYYYYYYYYYYYYY" . After create a new telegram group and add your bot and @myidbot to the group , then ask @myidbot for the chat ID of the group .
-Finally paste your token in RunMe.py at <token> and the chatID at <chatid> . 
+## Setup
 
+1. Create a Telegram bot:
+   - Contact [@BotFather](https://telegram.me/BotFather) on Telegram.
+   - Follow the instructions to create a new bot and obtain the bot token (`"XXXXXXXXX:YYYYYYYYYYYYYYYYYY"`).
+   
+2. Create a new Telegram group:
+   - Add your bot and [@myidbot](https://telegram.me/myidbot) to the group.
+   - Use [@myidbot](https://telegram.me/myidbot) to get the chat ID of the group.
 
+3. Update the script:
+   - Paste your bot token in `RunMe.py` at `<token>`.
+   - Paste the chat ID in `RunMe.py` at `<chatid>`.
+
+## Running the Application
+
+1. Run the Python script:
+   ```sh
+   python RunMe.py
+   ```
+
+### Usage
+
+1. The script will prompt you to take a reference image or use an existing one.
+2. Enter the waiting time before motion detection starts.
+3. The script will start monitoring for motion. When motion is detected, an image will be captured and sent to the specified Telegram chat.
